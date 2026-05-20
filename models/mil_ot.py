@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+
 def pairwise_cosine_distance(x, y):
     x = F.normalize(x, dim=-1)
     y = F.normalize(y, dim=-1)
