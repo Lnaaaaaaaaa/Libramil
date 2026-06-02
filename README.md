@@ -32,16 +32,18 @@ No additional trained weights are provided.
 ## Training & Evaluation
 
 ```bash
-python main.py \   
---data_split_json ./data/tcga_split.json \
---data_csv ./data/labels.csv \  
---h5_file_dir ./data/features/  \
---instance_path ./text_prompt/TCGA_RCC_instance_prompt.json \
---bag_path ./text_prompt/TCGA_RCC_two_scale_text_prompt.csv \
---text_model_weights_path ./conch/pytorch_model.bin \
---save_dir ./results/   \
---num_vis_prototypes 6  \
---num_classes 2 
+ python main.py \
+      --data_split_json ./data_1shot/data_split.json \
+      --data_csv ./data_1shot/labels.csv \
+      --h5_file_dir /mnt/sda2/WSI/muti-modal/TCGA-RCC-fea/features \
+      --instance_path ./text_prompt/TCGA_RCC_instance_prompt.json \
+      --bag_path ./text_prompt/TCGA_RCC_two_scale_text_prompt.csv \
+      --text_model_weights_path /mnt/sda1/ln_workspace/CONCH/checkpoints/pytorch_model.bin \
+      --save_dir ./results/TCGA_RCC_1shot_k=4 \
+      --num_vis_prototypes 4 \
+      --num_classes 3 \
+      --epoches 20
+ 
 ```
 
 Training and evaluation are performed in a single run.
