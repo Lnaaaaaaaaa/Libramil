@@ -1,0 +1,19 @@
+# 忽略缓存和环境
+__pycache__/
+.vscode/
+
+# 忽略日志和结果
+logs/
+experiment_logs/
+results*/
+TCGA_RCC*/
+
+# 忽略数据和模型权重
+data/
+data_*/
+models/
+*.pth
+*.pt
+*.h5
+# 忽略无关文档
+Zhuang*/

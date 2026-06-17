@@ -1,3 +1,0 @@
-metric,test_acc,test_auc,test_f1_score
-mean,0.7648,0.894,0.7438
-std,0.0488,0.0288,0.0492
