@@ -11,7 +11,6 @@ TCGA_RCC*/
 # 忽略数据和模型权重
 data/
 data_*/
-models/
 *.pth
 *.pt
 *.h5
